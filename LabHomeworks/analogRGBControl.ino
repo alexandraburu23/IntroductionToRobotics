@@ -28,16 +28,26 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-    potRedValue = analogRead(potRedPin);
+  potRedValue = analogRead(potRedPin);
     potGreenValue = analogRead(potGreenPin);
     potBlueValue = analogRead(potBluePin);
 
-    ledRedValue = map(potRedPin, 0,1023,0,255);
-    ledGreenValue = map(potGreenPin, 0,1023,0,255);
-    ledBlueValue = map(potBluePin, 0,1023,0,255);
+    ledRedValue = map(potRedValue, 0,1023,0,255);
+    ledGreenValue = map(potGreenValue, 0,1023,0,255);
+    ledBlueValue = map(potBlueValue, 0,1023,0,255);
+
+//    ledRedValue = potRedValue/4;
+//    ledGreenValue = potGreenValue/4;
+//    ledBlueValue = potBlueValue/4;
     
     setColor(ledRedValue, ledGreenValue, ledBlueValue);
+    Serial.print("Red: ");
+    Serial.print(ledRedValue);
+    Serial.print(" Green: ");
+    Serial.print(ledGreenValue);
+    Serial.print(" Blue: ");
+    Serial.print(ledBlueValue);
+    Serial.print("\n");
     delay(30);
 }
 
