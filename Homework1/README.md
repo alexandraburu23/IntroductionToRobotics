@@ -15,3 +15,8 @@ Use a separat potentiometer in controlling each of the color of the RGB led (Red
 The control must be done with digital electronics (aka you must read the value of the potentiometer with Arduino, 
 and write a mapped value to each of the pins connected to the led).
 
+## Setup
+
+## Video Demo
+
+Video demo can be view [here](https://drive.google.com/file/d/1NNJxuIA7x-5kLP-6mjYyttLZF8OrrUAM/view?usp=sharing)
