@@ -21,4 +21,4 @@ and write a mapped value to each of the pins connected to the led).
 
 ## Video Demo
 
-Video demo can be view [here](https://drive.google.com/file/d/1NNJxuIA7x-5kLP-6mjYyttLZF8OrrUAM/view?usp=sharing)
+Video demo can be viewed [here](https://drive.google.com/file/d/1NNJxuIA7x-5kLP-6mjYyttLZF8OrrUAM/view?usp=sharing) .
