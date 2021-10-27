@@ -10,9 +10,19 @@ int potRedValue = 0;
 int potGreenValue = 0;
 int potBlueValue = 0;
 
+int potNoiseRed = 0;
+int potNoiseGreen = 0;
+int potNoiseBlue = 0;
+
 float ledRedValue = 0;
 float ledGreenValue = 0;
 float ledBlueValue = 0;
+
+float finalRedValue = 0;
+float finalGreenValue = 0;
+float finalBlueValue = 0;
+
+float alphaValue = 0.6;
 
 int maxAnalogValue = 255;
 int maxPotValue = 1023;
@@ -26,6 +36,10 @@ void setup() {
     pinMode(redPin, OUTPUT); 
     pinMode(greenPin, OUTPUT); 
     pinMode(bluePin, OUTPUT);
+    /* reading the first value for the potentiometer in order to calculate based on the noise */
+    potNoiseRed = analogRead(potRedPin);
+    potNoiseGreen = analogRead(potGreenPin);
+    potNoiseBlue = analogRead(potBluePin);
     /* initialize serial communication at 9600 bits per second */
     Serial.begin(9600);
 }
@@ -35,10 +49,14 @@ void loop() {
     potRedValue = analogRead(potRedPin);
     potGreenValue = analogRead(potGreenPin);
     potBlueValue = analogRead(potBluePin);
+    /* reducing noise from the potentiometer value reading */
+    potNoiseRed = (alphaValue*potRedValue) + ((1-alphaValue)*potNoiseRed);
+    potNoiseGreen = (alphaValue*potGreenValue) + ((1-alphaValue)*potNoiseGreen);
+    potNoiseBlue = (alphaValue*potBlueValue) + ((1-alphaValue)*potNoiseBlue);
     /* converting the 0..1023 scale to 0..255 in order to correspond with the max-min values of the led intensity */
-    ledRedValue = map(potRedValue, 0, maxPotValue, 0, maxAnalogValue);
-    ledGreenValue = map(potGreenValue, 0, maxPotValue, 0, maxAnalogValue);
-    ledBlueValue = map(potBlueValue, 0, maxPotValue, 0, maxAnalogValue);
+    ledRedValue = map(potNoiseRed, 0, maxPotValue, 0, maxAnalogValue);
+    ledGreenValue = map(potNoiseGreen, 0, maxPotValue, 0, maxAnalogValue);
+    ledBlueValue = map(potNoiseBlue, 0, maxPotValue, 0, maxAnalogValue);
     /* setting the values of the RGB led */
     setColor(ledRedValue, ledGreenValue, ledBlueValue);
     /* printing every value in serial*/
