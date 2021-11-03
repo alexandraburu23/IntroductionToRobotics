@@ -27,7 +27,7 @@ The system has the following states:
 
 ## Setup
 
-![setup]            (https://github.com/alexandraburu23/IntroductionToRobotics/blob/main/Homework1/setup.jpg)
+![setup](https://github.com/alexandraburu23/IntroductionToRobotics/blob/main/Homework2/setup.jpg)
 
 ## Video Demo
 
