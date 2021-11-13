@@ -12,7 +12,6 @@
 * Arduino Uno Board
 * breadboard
 * connection cables
-* 3 potentiometers
 
 ## Technical Task 
 
