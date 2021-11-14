@@ -20,7 +20,7 @@ Observation : you must increment the number for each joystick movement - it shou
 
 ## Setup
 
-![setup](https://github.com/alexandraburu23/IntroductionToRobotics/blob/main/Homework4/setup.jpg)
+![setup](https://github.com/alexandraburu23/IntroductionToRobotics/blob/main/Homework4/setup.jpeg)
 
 ## Video Demo
 
