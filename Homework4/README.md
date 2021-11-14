@@ -5,7 +5,7 @@
 * 4-digit 7-segments display
 * 74hc595 shift register
 * joystick
-* 3 330 ohms resistors
+* 4 330 ohms resistors
 * connection cables
 * Arduino Uno Board
 * 1 big breadboard
