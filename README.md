@@ -13,3 +13,5 @@ H1 - [RGB led with potentiometers](https://github.com/alexandraburu23/Introducti
 H2 - [Traffic light crosswalk](https://github.com/alexandraburu23/IntroductionToRobotics/tree/main/Homework2)
 
 H3 - [EMF detector](https://github.com/alexandraburu23/IntroductionToRobotics/tree/main/Homework3)
+
+H4 - [4-digit 7-segments display control](https://github.com/alexandraburu23/IntroductionToRobotics/tree/main/Homework4)
