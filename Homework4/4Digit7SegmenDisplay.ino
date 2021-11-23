@@ -170,8 +170,8 @@ void writeNumber(int displayNo, int selected){
       noToWrite = digitArray[digitNumber[i]];
     }
     /* displaying the values with the shift register */
-    showDigit(i);
     writeReg(noToWrite);
+    showDigit(i);
     /* waiting for the electrical charge to run out */
     delay(6); 
   }
