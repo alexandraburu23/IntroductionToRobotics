@@ -15,3 +15,5 @@ H2 - [Traffic light crosswalk](https://github.com/alexandraburu23/IntroductionTo
 H3 - [EMF detector](https://github.com/alexandraburu23/IntroductionToRobotics/tree/main/Homework3)
 
 H4 - [4-digit 7-segments display control](https://github.com/alexandraburu23/IntroductionToRobotics/tree/main/Homework4)
+
+Project - [Tetris Game](https://github.com/alexandraburu23/Tetris-Game-Project)
