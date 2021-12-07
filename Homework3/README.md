@@ -22,6 +22,7 @@ Basically, we’re building the ghost detector (aka an EMF - electromagneticfiel
 
 ## Video Demo
 
-Video demo can be viewed [here](https://drive.google.com/file/d/1fxsrHYihryFwpS4tz7c0c57U9x-n2t1s/view?usp=drivesdk){:target="_blank"} 
+Video demo can be viewed [here](https://drive.google.com/file/d/1fxsrHYihryFwpS4tz7c0c57U9x-n2t1s/view?usp=drivesdk)
+
 %md <a href="(https://drive.google.com/file/d/1fxsrHYihryFwpS4tz7c0c57U9x-n2t1s/view?usp=drivesdk" target="_blank">demo</a>.
 
